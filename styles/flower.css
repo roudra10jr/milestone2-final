@@ -110,9 +110,11 @@ nav ul li a{
 .plants{
   max-width: 1140px;
   margin: 120px auto;
+  /* margin: 30px auto; */
 }
 .plants-title{
   font-size: 3rem;
+  color: var(--primary-font-color);
 }
 .plant-st{
   margin-bottom: 50px;
@@ -124,11 +126,40 @@ nav ul li a{
 }
 .card{
   width: 270px;
-  height: 484.94px;
+  /* height: 484.94px; */
+}
+.card-img{
+  width: 100%;
 }
 .card button{
   width: 270px;
 }
+
+/* flowers & plants lovers */
+.fpl-container{
+    max-width: 1140px;
+    margin: 100px auto;
+    display: flex;
+    gap: 50px;
+}
+.badge{
+    margin-top: -1900px;
+    margin-bottom: 450px;
+    margin-left: 340px;
+    width: 286px;
+    height: 286px;
+}
+.margin-bottom{
+  margin-bottom: 20px;
+}
+
+.fpl-content li{
+  list-style-type: disc;
+  color: rgba(0, 0, 0, 0.5);
+  list-style-position: outside;
+  margin-bottom: 15px;
+}
+
 
 
 /* responsive style */
@@ -149,6 +180,20 @@ nav ul li a{
   }
   .card-container{
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 10px;
+  }
+  .fpl-container{
+    flex-direction: column;
+  }
+  .fpl-pic{
+    width: 100%;
+  }
+  .fpl-image .badge{
+    visibility: hidden;
+  }
+  .fpl-content{
+    margin-left: 8px;
   }
   
   
