@@ -191,7 +191,7 @@ nav ul li a{
 .right {
   /* background-color: rgba(0, 0, 0, 0.4); */
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.4)); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); */
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -202,7 +202,7 @@ nav ul li a{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  filter: brightness(75%);
+  /* filter: brightness(75%); */
  }
 
 .right {
@@ -211,15 +211,15 @@ nav ul li a{
 
 /* Background images */
 .left-one {
-  background-image: url('../assets/deal-bloom.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/deal-bloom.png');
 }
 
 .left-two {
-  background-image: url('../assets/deal-ana.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/deal-ana.png');
 }
 
 .right {
-  background-image: url('../assets/deal-zabo.png');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/deal-zabo.png');
 }
 
 .deal-box-one-text {
