@@ -280,6 +280,47 @@ nav ul li a{
   height: 50px;
   width: 200px;
 }
+/* main footer styles */
+.footer{
+  max-width: 1440px;
+  max-height: 348px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+}
+.footer-container{
+  max-width: 1140px;
+  height: 240px;
+  margin: 0 auto;
+  padding-top: 50px;
+  /* border: 1px solid salmon; */
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.logo-content{
+  width: 246px;
+  /* height: 150px; */
+}
+.footer-title{
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+
+}
+.footer-link-one ul li , 
+.footer-link-two ul li{
+  list-style: none;
+  margin-right: 100px;
+  margin-bottom: 30px;
+}
+.footer-link-one ul a, .footer-link-two ul a{
+  text-decoration: none;
+  color: rgba(107, 114, 128, 1);
+  font-size: 1rem;
+}
+.icon{
+  margin-right: 30px;
+}
 
 /* responsive style */
 @media screen and (max-width: 576px) {
@@ -357,5 +398,19 @@ nav ul li a{
   .subscribe-bar button{
     width: 80px;
   }
-
+  .footer-container{
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  .logo-content{
+    width: 100%;
+  }
+  .footer-title{
+    margin-bottom: 8px;
+  }
+  .footer-link-one ul li , 
+  .footer-link-two ul li{
+    margin-bottom: 10px;
+  }
 }
