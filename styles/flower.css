@@ -9,6 +9,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 :root{
   --primary-font-color: #111111;
@@ -102,10 +103,12 @@ nav ul li a{
   color: var(--secondary-font-color);
 }
 
-.hero-pic{
+/* .hero-pic{
   width: 50%;
+} */
+.banner-img{
+  width: 100%;
 }
-
 /* plants styles */
 .plants{
   max-width: 1140px;
@@ -122,17 +125,21 @@ nav ul li a{
 .card-container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 50px;
 }
 .card{
-  width: 270px;
+  /* width: 270px; */
+  max-width: 250px;
   /* height: 484.94px; */
 }
 .card-img{
   width: 100%;
 }
 .card button{
-  width: 270px;
+  /* width: 270px; */
+  width: 250px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
 }
 
 /* flowers & plants lovers */
@@ -142,21 +149,29 @@ nav ul li a{
     display: flex;
     gap: 30px;
 }
-.fpl-container > div{
-  flex: 50%;
-}
+.fpl-pic{
+  width: 100%;
+} 
 .badge{
+    margin-top: -1930px;
+    margin-bottom: 490px;
+    margin-left: 360px;
+    margin-right: -70px;
+    width: 300px;
+    height: 286px;
+}
+/* .badge{
     margin-top: -1900px;
     margin-bottom: 450px;
     margin-left: 340px;
     width: 286px;
     height: 286px;
-}
+} */
 .margin-bottom{
   margin-bottom: 12px;
 }
 .fpl-content ul{
-  margin-left: 25px;
+  margin-left: 35px;
 }
 
 .fpl-content li{
@@ -165,6 +180,9 @@ nav ul li a{
   list-style-position: outside;
   margin-bottom: 8px;
 }
+.fpl-content{
+    margin-left: 40px;
+  }
 
 /* latest deals styles */
 
@@ -196,7 +214,7 @@ nav ul li a{
   background-position: center;
   border-radius: 10px;
   padding: 20px;
-  height: 100px;
+  height: 110px;
   /* color: white; */
   display: flex;
   flex-direction: column;
@@ -206,7 +224,7 @@ nav ul li a{
  }
 
 .right {
-  height: 260px;
+  height: 240px;
 }
 
 /* Background images */
@@ -335,12 +353,13 @@ nav ul li a{
     /* justify-content: flex-start; */
     margin: auto;
   }
-  .hero-pic{
-    width: 100%;
+  .banner-content p{
+    width: 460px;
+    padding-right: 10px;
+  
   }
-  .card,
   .card button{
-    width: 180px;
+    width: 200px;
   }
   .card-container{
     grid-template-columns: repeat(2, 1fr);
@@ -350,12 +369,7 @@ nav ul li a{
   .fpl-container{
     flex-direction: column;
   }
-  .fpl-pic{
-    width: 50vh;
-    justify-items: center;
-    margin-left: 18px;
   
-  }
   .fpl-image .badge{
     visibility: hidden;
   }
@@ -369,12 +383,12 @@ nav ul li a{
   .left-one,
   .left-two,
   .right {
-    width: 50vh;
+    /* width: 50vh; */
     justify-items: center;
     /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
-    height: 30vh;
+    height: 35vh;
   }
   /* .nav,
   .banner-content,
