@@ -140,7 +140,10 @@ nav ul li a{
     max-width: 1140px;
     margin: 100px auto;
     display: flex;
-    gap: 50px;
+    gap: 30px;
+}
+.fpl-container > div{
+  flex: 50%;
 }
 .badge{
     margin-top: -1900px;
@@ -150,14 +153,17 @@ nav ul li a{
     height: 286px;
 }
 .margin-bottom{
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+}
+.fpl-content ul{
+  margin-left: 25px;
 }
 
 .fpl-content li{
   list-style-type: disc;
   color: rgba(0, 0, 0, 0.5);
   list-style-position: outside;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 /* latest deals styles */
@@ -183,7 +189,9 @@ nav ul li a{
 .left-one,
 .left-two,
 .right {
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.4)); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -194,8 +202,8 @@ nav ul li a{
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  filter: brightness(60%);
-}
+  filter: brightness(75%);
+ }
 
 .right {
   height: 260px;
@@ -233,6 +241,46 @@ nav ul li a{
     font-size: 28px;
 }
 
+/* colorful bunch in footer section */
+.clr-bunch{
+  max-width: 1440px;
+  background-image: url("../assets/news-letter-bg.png");
+  width: 100%;
+  height: 53vh;
+  background: cover;
+  background-repeat: no-repeat;
+  margin: 100px auto;
+}
+.clr-bunch-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  /* border: 1px solid black; */
+}
+.clr-bunch-container h3{
+  color: #FFFFFF;
+}
+.subscribe-bar{
+  position: relative;
+}
+.subscribe-bar input{
+  margin-top: 20px;
+  width: 540px;
+  height: 50px;
+  color: white;
+  border: none;
+  padding-left: 8px;
+
+}
+.subscribe-bar button{
+  position: absolute;
+  top: 20px;
+  height: 50px;
+  width: 200px;
+}
+
 /* responsive style */
 @media screen and (max-width: 576px) {
   nav ul{
@@ -249,6 +297,10 @@ nav ul li a{
   .hero-pic{
     width: 100%;
   }
+  .card,
+  .card button{
+    width: 180px;
+  }
   .card-container{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -258,7 +310,10 @@ nav ul li a{
     flex-direction: column;
   }
   .fpl-pic{
-    width: 100%;
+    width: 50vh;
+    justify-items: center;
+    margin-left: 18px;
+  
   }
   .fpl-image .badge{
     visibility: hidden;
@@ -273,10 +328,34 @@ nav ul li a{
   .left-one,
   .left-two,
   .right {
-    width: 100%;
-    background-size: cover;
+    width: 50vh;
+    justify-items: center;
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: auto;
+    background-position: center; */
+    height: 30vh;
   }
+  /* .nav,
+  .banner-content,
+  .banner-pic,
+  .fpl-pic,
+  .left-one,
+  .left-two,
+  .right{
+    width: 360px;
+  } */
+   .clr-bunch{
+      background: cover;
+   }
+  .subscribe-bar{
+    justify-items: center;
+  }
+   .subscribe-bar input{
+    margin-top: 20px;
+    width: 200px;
+  }
+  .subscribe-bar button{
+    width: 80px;
+  }
+
 }
